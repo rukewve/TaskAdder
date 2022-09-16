@@ -1,0 +1,132 @@
+* *::after *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.header>H1 {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    color: rgba(225, 225, 225, 0.8);
+}
+
+.input>input {
+    width: 250px;
+    height: 29px;
+    margin-top: 1px;
+    margin-bottom: 15px;
+    border-bottom: 4.5px solid rgb(200, 140, 190);
+    border-radius: 7px;
+    margin-left: 380px;
+    font-size: 15px;
+    color: black;
+}
+
+.input>input:focus {
+    outline: none;
+    border-bottom: 4.5px solid rgba(225, 225, 225, 0.9);
+}
+
+.input .taskinput {
+    color: rgba(225, 225, 225, 0.8);
+    font-size: 20px;
+    margin-top: 130px;
+    margin-left: 380px;
+}
+
+.input>button {
+    width: 110px;
+    height: 25px;
+    border-radius: 12px;
+    font-size: 10px;
+    margin-left: 380px;
+    background-color: rgb(200, 140, 190);
+    cursor: pointer;
+}
+
+.input>button:hover {
+    color: rgb(200, 140, 190);
+    background-color: white;
+}
+
+.tasklist .task {
+    color: rgba(225, 225, 225, 0.8);
+    margin: 25px 380px;
+}
+
+.tasklist>button {
+    width: 100px;
+    height: 32px;
+    background-color: rgb(200, 140, 190);
+    color: black;
+    margin-left: 385px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.tasklist>button:hover {
+    color: rgb(200, 140, 190);
+    background-color: white;
+    cursor: pointer;
+}
+
+#taskdisplay {
+    color: rgba(225, 225, 225, 0.8);
+    margin-left: 380px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: solid;
+
+}
+
+@media (max-width: 800px) {
+    div .taskinput {
+        margin: 140px auto;
+        margin-right: 200px;
+        font-size: 17px;
+        margin-bottom: 23px;
+    }
+
+    .header>H1 {
+        font-size: 22px;
+        margin-left: -2em;
+        margin-bottom: 25px;
+    }
+
+    .input>input {
+        margin-left: 139px;
+        margin-top: -35px;
+        width: 260px;
+    }
+
+    .input>button {
+        margin-left: 139px;
+    }
+
+    .tasklist .task {
+        margin: 20px auto;
+        margin-left: 140px;
+        margin-top: 40px;
+    }
+
+    .tasklist>button {
+        margin-left: 144px;
+    }
+
+    #taskdisplay>span {
+        width: -60px;
+        margin: 0 auto;
+        margin-left: -300px;
+    }
+
+    span {
+        width: 150px;
+    }
+
+}
