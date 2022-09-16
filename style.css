@@ -24,6 +24,7 @@ body {
     border-radius: 7px;
     margin-left: 380px;
     font-size: 15px;
+    color: black;
 }
 
 .input>input:focus {
